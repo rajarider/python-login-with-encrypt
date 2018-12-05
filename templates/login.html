@@ -1,0 +1,17 @@
+
+{% if session['custom_flash'] %}
+<p>{{ session['custom_flash']}} </p>
+{% else %}
+{% endif %}
+
+{% block body %}
+{% if session['logged_in'] %}
+<a href='/logout'>Logout</a>
+{% else %}
+<form action="/login" method="POST">
+  <input type="username" name="username" placeholder="Username">
+  <input type="password" name="password" placeholder="Password">
+  <input type="submit" value="Log in">
+</form>
+{% endif %}
+{% endblock %}

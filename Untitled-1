@@ -1,0 +1,7 @@
+ # password = sha256_crypt.encrypt(POST_PASSWORD)
+        # password2 = sha256_crypt.encrypt(POST_PASSWORD)
+
+        # print(password)
+        # print(password2)
+
+https://pythonprogramming.net/password-hashing-flask-tutorial/
